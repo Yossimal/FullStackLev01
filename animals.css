@@ -1,0 +1,98 @@
+  ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 2px;
+    overflow: hidden;
+    background-image: url("https://global-uploads.webflow.com/5e26c6af6f517b92c1a93455/5ec7e42fc6c12c4cd927c08b_african-savanna.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 850px;
+  }
+  
+  li {
+    float: left;
+    font-size: 45px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: rgb(30, 203, 148);
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, vw);
+    grid-gap: 15px;
+  }
+  .container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+  }
+  .container img:hover {
+    opacity: 1.0;
+  }
+
+  .container a{
+    position: relative;
+    text-align: center;
+    color: white; 
+    font-size: 34px;
+    font-weight: bold;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media only screen and (max-width: 1700px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, vw);
+        grid-gap: 10px;
+      }
+      li {
+        float: left;
+        font-size: 40px;
+      }
+      ul {
+        min-height: 650px;
+      }
+  }
+  @media only screen and (max-width: 1100px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, vw);
+        grid-gap: 5px;
+      }
+      li {
+        float: left;
+        font-size: 35px;
+      }
+      ul {
+        min-height: 450px;
+      }
+  }
+  @media only screen and (max-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, vw);
+        grid-gap: 5px;
+      }
+  }
