@@ -6,7 +6,7 @@
     background-image: url("https://global-uploads.webflow.com/5e26c6af6f517b92c1a93455/5ec7e42fc6c12c4cd927c08b_african-savanna.jpg");
     background-size: cover;
     background-position: center;
-    min-height: 850px;
+    min-height: 550px;
   }
   
   li {
@@ -21,7 +21,6 @@
     padding: 14px 16px;
     text-decoration: none;
     background-color: rgba(116, 233, 196,0.25);
-    transp
   }
   
   /* Change the link color to #111 (black) on hover */
@@ -56,7 +55,7 @@
     color: rgba(0, 0, 0,1);
   }
 
-  .bottom-left {
+  .bottom-center {
     position: absolute;
     bottom: 2px;
     left: 50%;
@@ -75,7 +74,7 @@
         font-size: 40px;
       }
       ul {
-        min-height: 650px;
+        min-height: 450px;
       }
       .container a{
         font-size: 26px;
@@ -90,10 +89,13 @@
       }
       li {
         float: left;
-        font-size: 35px;
+        font-size: 30px;
+      }
+      li a {
+        padding: 8px 10px;
       }
       ul {
-        min-height: 450px;
+        min-height: 350px;
       }
       .container a{
         font-size: 24px;
@@ -108,5 +110,16 @@
       }
       .container a{
         font-size: 22px;
+      }
+      ul {
+        min-height: 250px;
+        
+      }
+      li {
+        float: left;
+        font-size: 25px;
+      }
+      li a {
+        padding: 8px 10px;
       }
   }
