@@ -16,11 +16,11 @@
   
   li a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: rgba(116, 233, 196,0.25);
+    background-color: #084a21;
   }
   
   /* Change the link color to #111 (black) on hover */
