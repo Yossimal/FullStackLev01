@@ -7,21 +7,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/orderTiket.css" />
+    <link rel="stylesheet" href="../css/modal.css">
     <link rel="stylesheet" href="../css/ui.css" />
+    <link rel="stylesheet" href="../css/headerCartButton.css">
+
     <title>Document</title>
 </head>
 
 <body>
+    <!--modal-->
+    <div id="modal" class="hidden">
+        <div class="backdrop"></div>
+        <div class="modal">
+            <div class="content">
+                <ul class="cart-items">
+                    <li class="cart-item">
+                        <div>
+                            <h2>Normal Tiket</h2>
+                            <div class="cart-summary">
+                                <span class="cart-price">$20</span>
+                                <span class="cart-amount">X5</span>
+                            </div>
+                        </div>
+                        <div class="cart-actions">
+                            <button>−</button>
+                            <button>+</button>
+                        </div>
+                    </li>
+                    <li class="cart-item">
+                        <div>
+                            <h2>Tiket of Honor</h2>
+                            <div class="cart-summary">
+                                <span class="cart-price">$200</span>
+                                <span class="cart-amount">X1</span>
+                            </div>
+                        </div>
+                        <div class="cart-actions">
+                            <button>−</button>
+                            <button>+</button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="total">
+                    <span>Total Price</span>
+                    <span>$300</span>
+                </div>
+                <div class="actions">
+                    <button class="button--alt"
+                        onclick="document.getElementById('modal').style.display='none'">Close</button>
+                    <button class="button">Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--body-->
     <header class="header">
         <h1>#zoo_title</h1>
+        <button class="button-header bump fade-in-btn"
+            onclick="document.getElementById('modal').style.display = 'block'">
+            <span>Your Cart</span>
+            <span class="badge">5</span>
+        </button>
     </header>
     <div class="main-image">
-        <img src="../images/tiger3.jpg" alt="tem image">
+            <img src="../images/tiger3.jpg" alt="tem image">
     </div>
 
     <main>
         <section class="summary">
-
             <h2>Buy Tikets to the Zoo Online!</h2>
             <p>
                 Don't want to wait in infenite queues for the tiket? <br />
@@ -31,26 +84,157 @@
         </section>
         <section class="card customer-data">
             <form>
-                    <div class="control">
-                        <label for="fullName">Your Name: </label>
-                        <input type="text" id="fullName">
-                    </div>
-                    <div class="control">
-                        <label for="email">Email: </label>
-                        <input type="email" id="email">
-                    </div>
-                    <div class="control">
-                        <label for="phoneNumber">Your Phone Number: </label>
-                        <input type="tel" id="phoneNumber">
-                    </div>
-                    <div class="control">
+                <div class="control">
+                    <label for="fullName">Your Name: </label>
+                    <input type="text" id="fullName">
+                </div>
+                <div class="control">
+                    <label for="email">Email: </label>
+                    <input type="email" id="email">
+                </div>
+                <div class="control">
+                    <label for="phoneNumber">Your Phone Number: </label>
+                    <input type="tel" id="phoneNumber">
+                </div>
+                <!-- <div class="control">
                         <label for="amountOfCards" >Amount of Tikents to Order: </label>
                         <input type="number" id="amountOfCards" class="textbox">
-                    </div>
+                    </div> -->
 
             </form>
         </section>
+        <section class="card tikets">
+            <ul>
+                <li class="tiket">
+                    <div>
+                        <h3>Normal Tiket</h3>
+                        <div class="description">You can enter the Zoo for one day. That tiket has no discount and
+                            everyone can use it.</div>
+                        <div class="price">$20</div>
+                    </div>
+                    <div>
+                        <form class="price-form">
+                            <div class="input">
+                                <label for="tiketsNum1">Amount</label>
+                                <input id="tiketsNum1" min="0" type="number" />
+                            </div>
+                            <button>+ Add</button>
+
+                        </form>
+                    </div>
+                </li>
+                <li class="tiket">
+                    <div>
+                        <h3>Kids Tiket</h3>
+                        <div class="description">That tiket is for kids under 18.</div>
+                        <div class="price">$15</div>
+                    </div>
+                    <div>
+                        <form class="price-form">
+                            <div class="input">
+                                <label for="tiketsNum2">Amount</label>
+                                <input id="tiketsNum2" min="0" type="number" />
+                            </div>
+                            <button>+ Add</button>
+
+                        </form>
+                    </div>
+                </li>
+                <li class="tiket">
+                    <div>
+                        <h3>Soldiers Tiket</h3>
+                        <div class="description">That tiket is for soldiers. They deserve discount.</div>
+                        <div class="price">$10</div>
+                    </div>
+                    <div>
+                        <form class="price-form">
+                            <div class="input">
+                                <label for="tiketsNum3">Amount</label>
+                                <input id="tiketsNum3" min="0" type="number" />
+                            </div>
+                            <button>+ Add</button>
+
+                        </form>
+                    </div>
+                </li>
+                <li class="tiket">
+                    <div>
+                        <h3>Super tiket</h3>
+                        <div class="description">With that tiket you can have a day with a zoo worker and you may help
+                            feed the animals.</div>
+                        <div class="price">$50</div>
+                    </div>
+                    <div>
+                        <form class="price-form">
+                            <div class="input">
+                                <label for="tiketsNum4">Amount</label>
+                                <input id="tiketsNum4" min="0" type="number" />
+                            </div>
+                            <button>+ Add</button>
+
+                        </form>
+                    </div>
+                </li>
+                <li class="tiket">
+                    <div>
+                        <h3>Tiket of honor</h3>
+                        <div class="description">With that tiket you also can pet ome animals.</div>
+                        <div class="price">$200</div>
+                    </div>
+                    <div>
+                        <form class="price-form">
+                            <div class="input">
+                                <label for="tiketsNum5">Amount</label>
+                                <input id="tiketsNum5" min="0" type="number" />
+                            </div>
+                            <button>+ Add</button>
+
+                        </form>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
     </main>
+    <footer class="footer">
+        <table>
+            <tr>
+                <th>About us</th>
+                <th>Contact us</th>
+                <th>Buy Tikets</th>
+                <th>Need a Work?</th>
+                <th>Help the Animals</th>
+            </tr>
+            <tr>
+                <td><a href="#">Our Wikipedia page.</a></td>
+                <td><a href="#">By email</a></td>
+                <td><a href="http://national.zoo.union/buy-tikets?zoo=happy-zoo">From NZU Site</a></td>
+                <td><a href="./search-work.html?s=zoo-kipper">Zoo kiper</a></td>
+                <td><a href="./donate.html">Donate Happy Zoo</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Abot our activities</a></td>
+                <td><a href="#">By whatsapp</a></td>
+                <td><a href="http://megacard.com?store=happy-zoo">From megacard site</a></td>
+                <td><a href="./search-work.html?s=seller">Seller</a></td>
+                <td><a href="#">Donate NZU</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://facebook.com">Our Facebook</a></td>
+                <td><a href="">By SMS</a></td>
+                <td><a href="./orderTiket.html">From Our Site</a></td>
+                <td><a href="./search-work.html?s=cleaner">Cleaner</a></td>
+                <td><a href="#">Donate the Forest Keppers</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="./search-work.html?s=administration-manager">Administration Manager</a></td>
+                <td><a href=""></a></td>
+            </tr>
+        </table>
+    </footer>
 </body>
 
 </html>
