@@ -1,73 +1,73 @@
 .button-header {
-    cursor: pointer;
-    font: inherit;
-    border: none;
-    background-color: #014d23;
-    color: white;
-    padding: 0.75rem 3rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 25px;
-    font-weight: bold;
-    
-  }
-  
-  .fade-in-btn{
-    animation: fade-in 1000ms ease-in;
-  }
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #014d23;
+  color: white;
+  padding: 0.75rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+}
 
-  .button-header:hover,
-  .button-header:active {
-    background-color: #002c0e;
+.fade-in-btn {
+  animation: fade-in 1000ms ease-in;
+}
+
+.button-header:hover,
+.button-header:active {
+  background-color: #002c0e;
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: 0.5rem;
+}
+
+.badge {
+  background-color: #17b958;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.button-header:hover .badge,
+.button-header:active .badge {
+  background-color: #0c924d;
+}
+
+.bump:hover {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
   }
-  
-  .icon {
-    width: 1.35rem;
-    height: 1.35rem;
-    margin-right: 0.5rem;
+  10% {
+    transform: scale(0.9);
   }
-  
-  .badge {
-    background-color: #17b958;
-    padding: 0.25rem 1rem;
-    border-radius: 25px;
-    margin-left: 1rem;
-    font-weight: bold;
+  30% {
+    transform: scale(1.1);
   }
-  
-  .button-header:hover .badge,
-  .button-header:active .badge {
-    background-color: #0c924d;
+  50% {
+    transform: scale(1.15);
   }
-  
-  .bump:hover {
-    animation: bump 300ms ease-out;
+  100% {
+    transform: scale(1);
   }
-  
-  @keyframes bump {
-    0% {
-      transform: scale(1);
-    }
-    10% {
-      transform: scale(0.9);
-    }
-    30% {
-      transform: scale(1.1);
-    }
-    50% {
-      transform: scale(1.15);
-    }
-    100% {
-      transform: scale(1);
-    }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
   }
-  
-  @keyframes fade-in{
-    0%{
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
+}
+
