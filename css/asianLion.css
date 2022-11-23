@@ -1,0 +1,30 @@
+
+  html{
+    width: 100%;
+  }
+
+  .container {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "a a a b b b c c c"
+    "a a a b b b c c c"
+    "d d d e e e f f f"
+    "d d d e e e f f f";
+    grid-gap: 12px;
+}
+
+  .container .parts{
+    width: 99%;
+    height: 99%;
+    color: #084a21;
+    background-color: white;
+    border-radius: 14px;
+    border-style: solid;
+    border-color: #084a21;
+    border-width: 4px;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
