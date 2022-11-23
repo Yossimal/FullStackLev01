@@ -1,0 +1,23 @@
+#summary{
+  transform: translateY(-150px);
+  opacity: 0.8;
+}
+html{
+  width: 100%;
+}
+.main-image {
+  width: 100%;
+  height: auto;
+  min-height: 5rem;
+  max-height: 40rem;
+  object-fit: contain;
+}
+.main-image img {
+  transform: rotateZ(0) translateY(0) translateX(0);
+}
+header{
+  opacity: 0.7;
+}
+header:hover{
+  opacity: 1;
+}
