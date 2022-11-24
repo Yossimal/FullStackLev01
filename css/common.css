@@ -171,3 +171,15 @@ body {
     display: none;
   }
 }
+
+nav a:hover{
+  background-color: #10361b;
+}
+
+nav a{
+  text-decoration-line: none;
+  background-color: #155428;
+  background-size: 5rem;
+  font-size: larger;
+  padding: 1ex;
+}
