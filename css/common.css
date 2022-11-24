@@ -172,6 +172,19 @@ body {
   }
 }
 
+header{
+  opacity: 0.7;
+}
+header:hover{
+  opacity: 1;
+}
+
+@media only screen and (max-width: 550px) {
+  nav a{
+    display: none;
+  }
+}
+
 nav a:hover{
   background-color: #10361b;
 }
@@ -179,7 +192,8 @@ nav a:hover{
 nav a{
   text-decoration-line: none;
   background-color: #155428;
-  background-size: 5rem;
   font-size: larger;
-  padding: 1ex;
+  padding-left: 1ex;
+  padding-top: 2.5rem;
+  padding-bottom: 1.65rem;
 }
