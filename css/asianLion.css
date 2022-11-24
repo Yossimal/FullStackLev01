@@ -2,35 +2,6 @@
   html{
     width: 100%;
   }
-
-  .container {
-    width: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 12px;
-  }
-
-  .container .parts{
-    width: 99%;
-    height: 99%;
-    color: #084a21;
-    background-color: white;
-    border-radius: 14px;
-    border-style: solid;
-    border-color: #084a21;
-    border-width: 4px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
-#Title{
-  font-size: 35px;
-  font-weight: bolder;
-  margin: 0;
-  padding: 0;
-}
 .main-image {
   width: 100%;
   height: auto;
@@ -109,7 +80,7 @@ body {
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
-  .row, .navbar {   
+  .row{   
     flex-direction: column;
   }
 }
