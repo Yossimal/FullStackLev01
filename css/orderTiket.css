@@ -216,3 +216,9 @@
   background-color: #068a65;
   color: white;
 }
+
+@media only screen and (max-width: 900px) {
+  .hidden-small {
+    display: none;
+  }
+}
